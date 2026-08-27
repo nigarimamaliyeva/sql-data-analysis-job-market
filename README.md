@@ -64,5 +64,24 @@ INNER JOIN average_salary ON skills_demand.skill_id = average_salary.skill_id
 WHERE demand_count > 10
 ORDER BY avg_salary DESC, demand_count DESC
 LIMIT 25;
+[Top Optimal Skills for Remote Data Analysts](optimal_skills_chart.png)
 
+---
+
+## 5. Key Insights
+- **Core Market Foundations**: **SQL** (398 postings, $97,237 avg salary), **Excel** (256 postings, $87,288 avg salary), and **Python** (236 postings, $101,397 avg salary) represent the primary technical requirements for data analysts.
+- **Business Intelligence**: **Tableau** leads visualization tools in demand (230 postings, $99,288 avg salary), followed by **Power BI** (110 postings, $97,431 avg salary).
+- **High-Value Specialized Skills**: Cloud platforms and data warehousing technologies such as **Snowflake** ($112,948), **Azure** ($111,225), and **Go** ($115,320) command higher average salaries despite lower posting counts.
+
+---
+
+## 6. What I Learned
+- **Advanced Query Structuring**: Practiced breaking complex analytical questions into clean, modular components using CTEs (`WITH` clauses).
+- **Practical SQL Fundamentals**: Used `sql_notes2` to build hands-on experience with multi-table joins, grouping, and aggregation logic.
+- **CTE Filtering**: Filtered aggregated metrics by applying a `WHERE` condition (`WHERE demand_count > 10`) directly on the CTE output to isolate high-demand skills.
+
+---
+
+## 7. Conclusion
+Mastering **SQL**, **Python**, **Excel**, and **Tableau** provides the most solid core for entering the data analytics field. Expanding into cloud analytics tools like **Snowflake** or **Azure** further boosts compensation potential.
 
