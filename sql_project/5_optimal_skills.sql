@@ -31,8 +31,9 @@ SELECT skills_demand.skill_id,
 FROM skills_demand 
 INNER JOIN average_salary ON skills_demand.skill_id = average_salary.skill_id    
 WHERE demand_count > 10
-ORDER BY avg_salary DESC,
-         demand_count DESC
+ORDER BY
+         demand_count DESC,
+         avg_salary DESC
 LIMIT 25
 
 
@@ -51,6 +52,6 @@ WHERE job_title_short = 'Data Analyst'
       and job_work_from_home = TRUE
 GROUP BY skills_dim.skill_id
 HAVING COUNT(skills_job_dim.job_id) > 10
-order by avg_salary DESC,
-         demand_count DESC
+order by demand_count DESC,
+         avg_salary DESC
 LIMIT 25;                      
